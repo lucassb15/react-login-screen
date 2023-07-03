@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* Personalize a barra de rolagem */
+::-webkit-scrollbar {
+  @apply w-2 bg-gray-200
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-gray-400
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
